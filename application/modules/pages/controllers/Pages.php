@@ -14,4 +14,11 @@ class Pages extends CI_Controller {
                 $data['content'] = 'view_pages';
 		$this->load->view('master_view',$data);
 	}
+        
+        public function add()
+	{       
+                $data['title'] = 'Add Pages';
+                $data['content'] = 'add_pages';
+		$this->load->view('master_view',$data);
+	}
 }

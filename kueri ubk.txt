@@ -1,0 +1,55 @@
+https://github.com/okki23/ubk
+
+https://github.com/okki23/ubk
+
+C:/xampp/htdocs/ubk
+
+
+http://localhost/ubk/pages
+
+CREATE TABLE mhs(
+id int(10) primary key auto_increment,
+nama varchar(100),
+semester varchar(100),
+alamat text,
+telepon text,
+foto varchar(255)
+);
+
+
+
+cd ..
+cd ..
+cd xampp
+cd mysql
+cd bin
+mysql -u root -p
+
+use db_ubk;
+
+show databases;
+
+desc mhs;
+
+DATA DEFINITION LANGUAGE : DROP,ALTER,CREATE,RENAME
+DATA MANIPULATION LANGUAGE : SELECT,UPDATE,INSERT,UPDATE
+AGREGATION : WHERE,ORDER BY,GROUP BY
+
+
+INSERT into mhs (id,nama,semester,alamat,telepon,foto)
+values
+(null,'Mahmud','5','jl.nangka','088928342',
+'myphoto.jpg');
+
+-----------------------------------------------------------------
+
+UPDATE mhs SET nama = 'Yahya', semester = '3', 
+alamat = 'jl.buah' , telepon = '9823742' , foto = 'me.jpg' 
+where id = 1;
+
+-----------------------------------------------------------------
+
+SELECT * from mhs;
+
+-----------------------------------------------------------------
+DELETE from mhs where id = 1;
